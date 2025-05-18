@@ -264,7 +264,7 @@
                 <p>LinkedIn : <a href="https://www.linkedin.com/in/fatoumata-thioro-bah-a3640a215/">Fatoumata Thioro
                         BAH</a></p>
                 <p>GitHub : <a href="https://github.com/Thioro836">Thioro836</a></p>
-                <p>Email : <a href="fatouthioro24@gmail.com">fatouthioro24@gmail.com</a></p>
+                <p>Email : <a href="#">fatouthioro24@gmail.com</a></p>
             </div>
         </div>
     </div>
@@ -274,11 +274,12 @@
 </body>
 <script>
     document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
             document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
         });
     });
 </script>
+
 </html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Fatoumata Thioro BAH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            text-align: center;
+            padding: 3em 1em;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+        }
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        nav {
+            background-color: #1e3a8a;
+            padding: 1em;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5em;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #93c5fd;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2em auto;
+            padding: 0 1.5em;
+        }
+        .section {
+            margin-bottom: 3em;
+        }
+        .section h2 {
+            color: #1e3a8a;
+            font-size: 1.8em;
+            margin-bottom: 1em;
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 0.3em;
+        }
+        .card {
+            background: white;
+            padding: 1.5em;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5em;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .skill {
+            background-color: #e5e7eb;
+            padding: 0.5em 1em;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        .skill i {
+            margin-right: 0.5em;
+        }
+        footer {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 1.5em;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                margin: 0 0.5em;
+                font-size: 0.9em;
+            }
+            .container {
+                padding: 0 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fatoumata Thioro BAH</h1>
+        <p>Étudiante en Master 1 MIAGE | Stagiaire Développeuse Web Java/Angular chez Capgemini</p>
+    </header>
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#education">Formation</a>
+        <a href="#skills">Compétences</a>
+        <a href="#experience">Expérience</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="section" id="about">
+            <h2>À propos de moi</h2>
+            <div class="card">
+                <p>Étudiante en Master 1 MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises), je suis passionnée par le développement web et les technologies modernes. Actuellement stagiaire chez Capgemini, je contribue à des projets en Java et Angular, en développant des applications web performantes et intuitives. Mon objectif est de continuer à apprendre et de créer des solutions innovantes.</p>
+            </div>
+        </div>
+        <div class="section" id="education">
+            <h2>Formation</h2>
+            <div class="card">
+                <h3>Master 1 MIAGE - Université de Rennes- ISTIC </h3>
+                <p><em>2024 - Présent</em></p>
+                <p>Formation en Méthodes Informatiques Appliquées à la Gestion des Entreprises, avec un focus sur le développement logiciel, la gestion de projets, et les systèmes d'information.</p>
+            </div>
+        </div>
+        <div class="section" id="skills">
+            <h2>Compétences</h2>
+            <div class="card">
+                <div class="skills-list">
+                    <span class="skill"><i class="fab fa-java"></i>Java</span>
+                    <span class="skill"><i class="fab fa-angular"></i>Angular</span>
+                    <span class="skill"><i class="fab fa-html5"></i>HTML</span>
+                    <span class="skill"><i class="fab fa-css3-alt"></i>CSS</span>
+                    <span class="skill"><i class="fab fa-js"></i>JavaScript</span>
+                    <span class="skill"><i class="fab fa-php"></i>PHP</span>
+                    <span class="skill"><i class="fab fa-symfony"></i>Symfony</span>
+                    <span class="skill"><i class="fas fa-code"></i>API Rest</span>
+                    <span class="skill"><i class="fas fa-database"></i>NoSQL</span>
+                    <span class="skill"><i class="fas fa-database"></i>SQL</span>
+                    <span class="skill"><i class="fab fa-git-alt"></i>Git</span>
+                    <span class="skill"><i class="fas fa-tools"></i>Postman</span>
+                    <span class="skill"><i class="fas fa-vial"></i>JUnit</span>
+                    <span class="skill"><i class="fas fa-cogs"></i>Maven</span>
+                    <span class="skill"><i class="fas fa-tasks"></i>Jira/Trello</span>
+                    <span class="skill"><i class="fas fa-users"></i>Agile/Scrum</span>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="experience">
+            <h2>Expériences Professionnelles</h2>
+            <div class="card">
+                <h3>Stagiaire Développeuse Web Java/Angular - Capgemini</h3>
+                <p><em>2025 - Présent</em></p>
+                <p>Participation au développement d'applications web en utilisant Java pour le backend et Angular pour le frontend. Collaboration avec une équipe agile pour livrer des fonctionnalités robustes et optimisées. Contribution à la rédaction de tests unitaires et à l'amélioration des performances des applications.</p>
+            </div>
+            <div class="card">
+                <h3>Stagiaire Développeuse Web PHP/Symfony - Association Guinéenne d'Ille-et-Vilaine (AG35)</h3>
+                <p><em>Avril - Juin 2024</em></p>
+                <p>Participation au développement du site web de l'association en utilisant PHP et Symfony pour le backend, avec HTML/CSS pour le frontend. Collaboration avec une équipe agile pour livrer des fonctionnalités robustes et optimisées.</p>
+            </div>
+        </div>
+        <div class="section" id="projects">
+            <h2>Projets</h2>
+            <div class="card">
+                <h3>Projet Universitaire - Application de vente de tickets de concert en ligne</h3>
+                <p>L'objectif de ce projet a été de développer une application web permettant aux utilisateurs d'acheter des tickets de concert en ligne. L'application offre une expérience utilisateur fluide tout en permettant aux organisateurs de concerts de gérer simplement leurs événements.</p>
+                <a href="https://github.com/Thioro836/-Application-de-Vente-de-Tickets-de-Concert-en-Ligne.git">Lien vers le projet</a>
+            </div>
+            <div class="card">
+                <h3>Projet Universitaire - Création d'un mini-éditeur de texte</h3>
+                <p>Ce projet est un mini-éditeur de texte implémentant plusieurs fonctionnalités permettant d'éditer et de manipuler du texte dans un buffer. Il a été développé dans le cadre des travaux pratiques en suivant une approche incrémentale sur trois versions : V1 : Fonctionnalités de base (insertion, sélection, couper, copier, coller). V2 : Enregistrement et relecture des commandes utilisateur. V3 : Annulation et rétablissement des commandes sans limite d'historique.</p>
+                <a href="https://github.com/Thioro836/Mini-editor.git">Lien vers le projet</a>
+            </div>
+            <div class="card">
+                <h3>Projet Universitaire - Simulation Restaurant</h3>
+                <p>Ce projet simule le fonctionnement d'un restaurant en utilisant la programmation multithreadée pour gérer la concurrence entre clients, employés, et ressources partagées (comme le buffet et le stand de cuisson).</p>
+                <a href="https://github.com/Thioro836/Simulation_restaurant.git">Lien vers le projet</a>
+            </div>
+            <div class="card">
+                <h3>Projet Universitaire - Gestion d'un parking</h3>
+                <p>Ce projet vise à résoudre un problème d'optimisation lié à l'allocation optimale des voitures des deux côtés d'une rue en minimisant la longueur totale occupée.</p>
+                <a href="https://github.com/Thioro836/Parking.git">Lien vers le projet</a>
+            </div>
+            <div class="card">
+                <h3>Projet Personnel - Portfolio Web</h3>
+                <p>Création de ce portfolio en HTML, CSS et JavaScript pour présenter mes compétences et projets. Design responsive et moderne, optimisé pour une navigation fluide.</p>
+                <a href="https://github.com/Thioro836/Portfolio">Lien vers le code source</a>
+            </div>
+        </div>
+        <div class="section" id="contact">
+            <h2>Contact</h2>
+            <div class="card">
+                <p>Pour toute question ou opportunité de collaboration, n'hésitez pas à me contacter :</p>
+                <p>LinkedIn : <a href="https://www.linkedin.com/in/fatoumata-thioro-bah-a3640a215/">Fatoumata Thioro BAH</a></p>
+                <p>GitHub : <a href="https://github.com/Thioro836">Thioro836</a></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 Fatoumata Thioro BAH. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

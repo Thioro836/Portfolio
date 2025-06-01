@@ -4,132 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Fatoumata Thioro BAH</title>
+    <title> Fatoumata Thioro BAH - Portfolio </title>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f0f2f5;
-            color: #333;
-        }
-
-        header {
-            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
-            color: white;
-            text-align: center;
-            padding: 3em 1em;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 0.2em;
-        }
-
-        header p {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-
-        nav {
-            background-color: #1e3a8a;
-            padding: 1em;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1.5em;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #93c5fd;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 2em auto;
-            padding: 0 1.5em;
-        }
-
-        .section {
-            margin-bottom: 3em;
-        }
-
-        .section h2 {
-            color: #1e3a8a;
-            font-size: 1.8em;
-            margin-bottom: 1em;
-            border-bottom: 2px solid #3b82f6;
-            padding-bottom: 0.3em;
-        }
-
-        .card {
-            background: white;
-            padding: 1.5em;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 1.5em;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1em;
-        }
-
-        .skill {
-            background-color: #e5e7eb;
-            padding: 0.5em 1em;
-            border-radius: 20px;
-            font-size: 0.9em;
-            font-weight: 500;
-        }
-
-        .skill i {
-            margin-right: 0.5em;
-        }
-
-        footer {
-            background-color: #1e3a8a;
-            color: white;
-            text-align: center;
-            padding: 1.5em;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
-
-            nav a {
-                margin: 0 0.5em;
-                font-size: 0.9em;
-            }
-
-            .container {
-                padding: 0 1em;
-            }
-        }
-    </style>
+      <style>
+  body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1em;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+    .section {
+      margin-bottom: 2em;
+    }
+    h1, h2 {
+      color: #222;
+    }
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1em;
+    }
+    .skill {
+      background-color: #f3f4f6;
+      padding: 0.5em;
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    .experience-entry, .card {
+      background-color: white;
+      padding: 1em;
+      margin-bottom: 1em;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 1em;
+    }
+  </style>
+</head>
+<body>
     <link rel="icon" type="image/png" href="favicon.png">
     <meta name="description"
         content="Portfolio de Fatoumata Thioro BAH, étudiante en Master 1 MIAGE et stagiaire développeuse web Java/Angular chez Capgemini.">
@@ -143,14 +88,15 @@
         <h1>Fatoumata Thioro BAH</h1>
         <p>Étudiante en Master 1 MIAGE | Stagiaire Développeuse Web Java/Angular chez Capgemini</p>
     </header>
-    <nav>
-        <a href="#about">À propos</a>
-        <a href="#education">Formation</a>
-        <a href="#skills">Compétences</a>
-        <a href="#experience">Expériences</a>
-        <a href="#projects">Projets</a>
-        <a href="#contact">Contact</a>
-    </nav>
+     <nav>
+    <a href="#about" aria-label="À propos de moi">À propos</a>
+    <a href="#education" aria-label="Parcours éducatif">Éducation</a>
+    <a href="#skills" aria-label="Compétences techniques">Compétences</a>
+    <a href="#experience" aria-label="Expériences professionnelles">Expérience</a>
+    <a href="#projects" aria-label="Projets">Projets</a>
+    <a href="#contact" aria-label="Contactez-moi">Contact</a>
+  </nav>
+
     <div class="container">
         <div class="section" id="about">
             <h2>À propos de moi</h2>
@@ -218,7 +164,7 @@
                 <span class="skill"><i class="fab fa-css3-alt"></i>CSS</span>
                 <span class="skill"><i class="fab fa-js"></i>JavaScript</span>
                 <span class="skill"><i class="fab fa-php"></i>PHP</span>
-                <span class="skill"><i class="fab fa-python"></i>Pyton</span>
+                <span class="skill"><i class="fab fa-python"></i>Python</span>
                 <span class="skill"><i class="fab fa-symfony"></i>Symfony</span>
                 <span class="skill"><i class="fas fa-code"></i>API Rest</span>
                 <span class="skill"><i class="fas fa-database"></i>NoSQL</span>
@@ -258,6 +204,11 @@
                 backend, avec HTML/CSS pour le frontend. Collaboration avec une équipe agile pour livrer des
                 fonctionnalités robustes et optimisées.</p>
         </div>
+        <div class="experience-entry">
+        <h3>Orange Finances Mobiles Guinée - Stagiaire Data Analyst</h3>
+        <p>2023 (6 mois)</p>
+        <p>Traitement des données SQL, création de rapports de performance et analyse des indicateurs.</p>
+      </div>
     </div>
     <div class="section" id="projects">
         <h2>Projets</h2>

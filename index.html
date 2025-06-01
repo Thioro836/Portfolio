@@ -4,83 +4,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Fatoumata Thioro BAH - Portfolio </title>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-      <style>
-  body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f0f0f0;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #333;
-      color: white;
-      padding: 1em;
-      text-align: center;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #444;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 1em;
-      transition: background 0.3s;
-    }
-    nav a:hover {
-      background-color: #555;
-    }
-    .container {
-      max-width: 900px;
-      margin: 2em auto;
-      padding: 0 1em;
-    }
-    .section {
-      margin-bottom: 2em;
-    }
-    h1, h2 {
-      color: #222;
-    }
-    .skills-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 1em;
-    }
-    .skill {
-      background-color: #f3f4f6;
-      padding: 0.5em;
-      border-radius: 5px;
-      text-align: center;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-    }
-    .experience-entry, .card {
-      background-color: white;
-      padding: 1em;
-      margin-bottom: 1em;
-      border-radius: 5px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      background-color: #333;
-      color: white;
-      padding: 1em;
-    }
-  </style>
-</head>
-<body>
-    <link rel="icon" type="image/png" href="favicon.png">
     <meta name="description"
         content="Portfolio de Fatoumata Thioro BAH, étudiante en Master 1 MIAGE et stagiaire développeuse web Java/Angular chez Capgemini.">
     <meta name="keywords"
-        content="Fatoumata Thioro BAH, MIAGE, développeuse web, Java, Angular, PHP, Symfony, portfolio">
+        content="Fatoumata Thioro BAH, MIAGE, développeuse web, Java, Angular, PHP, Symfony, Laravel, Python, Gazebo, Telekyb3, portfolio">
     <meta name="author" content="Fatoumata Thioro BAH">
+    <title>Fatoumata Thioro BAH - Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 2em 1em;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1em 1.5em;
+            font-weight: 500;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            color: #ddd;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2em auto;
+            padding: 0 1em;
+        }
+
+        .section {
+            margin-bottom: 3em;
+        }
+
+        h2 {
+            color: #222;
+            font-size: 1.8em;
+            margin-bottom: 1em;
+            border-bottom: 2px solid #444;
+            padding-bottom: 0.3em;
+        }
+
+        .card,
+        .experience-entry {
+            background-color: white;
+            padding: 1.5em;
+            margin-bottom: 1.5em;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover,
+        .experience-entry:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1em;
+        }
+
+        .skill {
+            background-color: #f3f4f6;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 500;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        .skill i {
+            margin-right: 0.5em;
+        }
+
+        ul {
+            margin: 1em 0;
+            padding-left: 2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav {
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                padding: 0.8em 1em;
+                font-size: 0.9em;
+            }
+
+            .container {
+                padding: 0 1em;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -88,228 +157,204 @@
         <h1>Fatoumata Thioro BAH</h1>
         <p>Étudiante en Master 1 MIAGE | Stagiaire Développeuse Web Java/Angular chez Capgemini</p>
     </header>
-     <nav>
-    <a href="#about" aria-label="À propos de moi">À propos</a>
-    <a href="#education" aria-label="Parcours éducatif">Éducation</a>
-    <a href="#skills" aria-label="Compétences techniques">Compétences</a>
-    <a href="#experience" aria-label="Expériences professionnelles">Expérience</a>
-    <a href="#projects" aria-label="Projets">Projets</a>
-    <a href="#contact" aria-label="Contactez-moi">Contact</a>
-  </nav>
-
+    <nav>
+        <a href="#about" aria-label="À propos de moi">À propos</a>
+        <a href="#education" aria-label="Parcours éducatif">Éducation</a>
+        <a href="#skills" aria-label="Compétences techniques">Compétences</a>
+        <a href="#experience" aria-label="Expériences professionnelles">Expérience</a>
+        <a href="#projects" aria-label="Projets">Projets</a>
+        <a href="#contact" aria-label="Contactez-moi">Contact</a>
+    </nav>
     <div class="container">
         <div class="section" id="about">
             <h2>À propos de moi</h2>
             <div class="card">
-                <p>
-                    Étudiante en Master 1 MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises), je
-                    suis passionnée par le développement web, avec un intérêt particulier pour le développement backend
-                    et les technologies modernes.
-                </p>
-                <p>
-                    Actuellement stagiaire chez <strong>Capgemini</strong>, je participe au développement d’applications
-                    web performantes et intuitives, en Java et Angular. Cette expérience m’a permis de renforcer mes
-                    compétences en architecture logicielle, en collaboration d’équipe et en gestion de projet agile.
-                </p>
-                <p>
-                    J’ai également eu l’occasion de travailler sur des projets de simulation robotique, comme la
-                    migration de plugins de <em>Gazebo Classic</em> vers <em>Gazebo Harmonic</em>. Cela m’a permis de
-                    découvrir un nouvel environnement de développement et d’élargir ma vision technique au-delà du web.
-                </p>
-                <p>
-                    Ce qui me motive dans le développement, c’est la possibilité de transformer des idées en solutions
-                    concrètes, mais aussi les défis techniques qui poussent à se surpasser. Pour moi, un bon développeur
-                    n’est pas seulement celui qui maîtrise toutes les technologies, mais surtout celui qui sait
-                    s’adapter, apprendre et collaborer efficacement.
-                </p>
-                <p>
-                    J’aime travailler en équipe, partager mes connaissances et apprendre des autres. Je suis toujours en
-                    quête de nouvelles opportunités pour progresser, explorer de nouveaux domaines et construire des
-                    projets porteurs de sens.
-                </p>
-                <p>
-                    Mon objectif à moyen terme est d’évoluer vers un poste de <strong>lead tech</strong>,
-                    un rôle qui allie expertise technique et leadership humain. Car au-delà du code,
-                    je suis convaincue que le développement repose avant tout sur la collaboration, l’écoute et le
-                    partage.
-
-
-                </p>
+                <p>Étudiante en Master 1 MIAGE à l’Université de Rennes - ISTIC, je suis passionnée par le développement
+                    web, avec un intérêt particulier pour le backend et les technologies modernes.</p>
+                <p>Actuellement stagiaire chez <strong>Capgemini</strong>, je participe au développement d’applications
+                    web performantes en Java et Angular, renforçant mes compétences en architecture logicielle,
+                    collaboration agile, et gestion de projet.</p>
+                <p>J’ai contribué au projet open source <strong>Telekyb3</strong> avec l’équipe Rainbow d’Inria, en
+                    migrant des plugins de Gazebo Classic vers Gazebo Harmonic, et développé une application web pour la
+                    gestion des consultations prénatales, consolidant mes compétences en simulation robotique et
+                    développement web.</p>
+                <p>Ce qui me motive, c’est transformer des idées en solutions concrètes et relever des défis techniques.
+                    Je valorise la collaboration, l’apprentissage continu, et l’adaptabilité. Mon objectif est d’évoluer
+                    vers un rôle de <strong>lead tech</strong>, alliant expertise technique et leadership humain.</p>
+                <p>Au-delà du code, chacun de ces projets est avant tout une aventure humaine faite de collaboration,
+                    d’apprentissage continu et de curiosité technique. Ces expériences m’ont appris à coder, mais aussi
+                    à écouter, échanger et évoluer en équipe.</p>
             </div>
         </div>
-
-    </div>
-    <div class="section" id="education">
-        <h2>Formation</h2>
-        <div class="card">
-            <h3>Master 1 MIAGE - Université de Rennes - ISTIC </h3>
-            <p><em>2024 - Présent</em></p>
-            <p>Formation en Méthodes Informatiques Appliquées à la Gestion des Entreprises, avec un focus sur le
-                développement logiciel, la gestion de projets, et les systèmes d'information.</p>
-        </div>
-        <div class="card">
-            <h3>Licence 3 MIAGE - Université de Rennes - ISTIC </h3>
-            <p><em>2023 - 2024 </em></p>
-            <p>Formation en Méthodes Informatiques Appliquées à la Gestion des Entreprises, avec un focus sur le
-                développement logiciel, la gestion de projets, et les systèmes d'information.</p>
-        </div>
-    </div>
-    <div class="section" id="skills">
-        <h2>Compétences</h2>
-        <div class="card">
-            <div class="skills-list">
-                <span class="skill"><i class="fab fa-java"></i>Java</span>
-                <span class="skill"><i class="fab fa-angular"></i>Angular</span>
-                <span class="skill"><i class="fab fa-html5"></i>HTML</span>
-                <span class="skill"><i class="fab fa-css3-alt"></i>CSS</span>
-                <span class="skill"><i class="fab fa-js"></i>JavaScript</span>
-                <span class="skill"><i class="fab fa-php"></i>PHP</span>
-                <span class="skill"><i class="fab fa-python"></i>Python</span>
-                <span class="skill"><i class="fab fa-symfony"></i>Symfony</span>
-                <span class="skill"><i class="fas fa-code"></i>API Rest</span>
-                <span class="skill"><i class="fas fa-database"></i>NoSQL</span>
-                <span class="skill"><i class="fas fa-database"></i>PostgreSQL</span>
-                <span class="skill"><i class="fas fa-database"></i>DBeaver</span>
-                <span class="skill"><i class="fas fa-database"></i>SQL</span>
-                <span class="skill"><i class="fab fa-git-alt"></i>Git</span>
-                <span class="skill"><i class="fab fa-git-alt"></i>GitKraken</span>
-                <span class="skill"><i class="fas fa-tools"></i>Postman</span>
-                <span class="skill"><i class="fas fa-tools"></i>Bruno</span>
-                <span class="skill"><i class="fas fa-vial"></i>JUnit</span>
-                <span class="skill"><i class="fas fa-cogs"></i>Maven</span>
-                <span class="skill"><i class="fas fa-tasks"></i>Jira/Trello</span>
-                <span class="skill"><i class="fas fa-users"></i>Agile/Scrum</span>
-                <span class="skill"><i class="fas fa-cube"></i> Gazebo</span>
+        <div class="section" id="education">
+            <h2>Formation</h2>
+            <div class="card">
+                <h3>Master 1 MIAGE - Université de Rennes - ISTIC</h3>
+                <p><em>2024 - Présent</em></p>
+                <p>Formation en Méthodes Informatiques Appliquées à la Gestion des Entreprises, avec un focus sur le
+                    développement logiciel, la gestion de projets, et les systèmes d’information.</p>
+            </div>
+            <div class="card">
+                <h3>Licence 3 MIAGE - Université de Rennes - ISTIC</h3>
+                <p><em>2023 - 2024</em></p>
+                <p>Formation en Méthodes Informatiques Appliquées à la Gestion des Entreprises, avec des cours sur le
+                    développement logiciel, la gestion de projets, et les systèmes d’information.</p>
             </div>
         </div>
-    </div>
-    <p>Au-delà du code, chacun de ces projets est avant tout une aventure humaine faite de collaboration,
-        d’apprentissage continu et de curiosité technique. Ces expériences m’ont appris à coder, mais aussi à écouter,
-        échanger et évoluer en équipe.</p>
+        <div class="section" id="skills">
+            <h2>Compétences</h2>
+            <div class="card">
+                <div class="skills-list">
+                    <span class="skill"><i class="fab fa-java"></i> Java</span>
+                    <span class="skill"><i class="fab fa-angular"></i> Angular</span>
+                    <span class="skill"><i class="fab fa-html5"></i> HTML</span>
+                    <span class="skill"><i class="fab fa-css3-alt"></i> CSS</span>
+                    <span class="skill"><i class="fab fa-js"></i> JavaScript</span>
+                    <span class="skill"><i class="fab fa-php"></i> PHP</span>
+                    <span class="skill"><i class="fab fa-laravel"></i> Laravel</span>
+                    <span class="skill"><i class="fab fa-python"></i> Python</span>
+                    <span class="skill"><i class="fab fa-symfony"></i> Symfony</span>
+                    <span class="skill"><i class="fas fa-code"></i> API Rest</span>
+                    <span class="skill"><i class="fas fa-database"></i> NoSQL</span>
+                    <span class="skill"><i class="fas fa-database"></i> PostgreSQL</span>
+                    <span class="skill"><i class="fas fa-database"></i> DBeaver</span>
+                    <span class="skill"><i class="fas fa-database"></i> SQL</span>
+                    <span class="skill"><i class="fab fa-git-alt"></i> Git</span>
+                    <span class="skill"><i class="fab fa-git-alt"></i> GitKraken</span>
+                    <span class="skill"><i class="fas fa-tools"></i> Postman</span>
+                    <span class="skill"><i class="fas fa-tools"></i> Bruno</span>
+                    <span class="skill"><i class="fas fa-vial"></i> JUnit</span>
+                    <span class="skill"><i class="fas fa-cogs"></i> Maven</span>
+                    <span class="skill"><i class="fas fa-tasks"></i> Jira/Trello</span>
+                    <span class="skill"><i class="fas fa-users"></i> Agile/Scrum</span>
+                    <span class="skill"><i class="fas fa-cube"></i> Gazebo</span>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="experience">
+            <h2>Expériences Professionnelles</h2>
+            <div class="card">
+                <h3>Stagiaire Développeuse Web Java/Angular - Capgemini</h3>
+                <p><em>2025 - Présent</em></p>
+                <p>Participation au développement d’applications web avec Java (backend) et Angular (frontend).
+                    Collaboration en équipe agile pour livrer des fonctionnalités robustes, rédaction de tests
+                    unitaires, et optimisation des performances.</p>
+            </div>
+            <div class="card">
+                <h3>Stagiaire Développeuse Web PHP/Symfony - Association Guinéenne d’Ille-et-Vilaine (AG35)</h3>
+                <p><em>Avril - Juin 2024</em></p>
+                <p>Développement du site web de l’association avec PHP/Symfony (backend) et HTML/CSS (frontend).
+                    Collaboration agile pour livrer des fonctionnalités optimisées.</p>
+            </div>
+            <div class="card">
+                <h3>Stagiaire Data Analyst - Orange Finances Mobiles Guinée</h3>
+                <p><em>2023 (6 mois)</em></p>
+                <p>Traitement de données SQL, création de rapports de performance, et analyse d’indicateurs clés.</p>
+            </div>
+        </div>
+        <div class="section" id="projects">
+            <h2>Projets</h2>
+            <div class="card">
+                <h3>🛰️ Migration de plugins pour Telekyb3 – Simulation robotique avec Gazebo</h3>
+                <p>Dans le cadre d’un projet universitaire, mon équipe a collaboré avec l’équipe Rainbow d’Inria pour
+                    contribuer à la migration de plugins de <strong>Gazebo Classic</strong> (v9/v11) vers <strong>Gazebo
+                        Harmonic</strong> pour leur simulateur robotique open source <strong>Telekyb3</strong>.</p>
+                <p>J’ai analysé les différences entre les architectures des deux versions, mis à jour les interfaces
+                    avec
+                    <strong>gz-sim</strong> et adapté les modèles <strong>SDF</strong> pour garantir leur compatibilité
+                    avec
+                    <strong>ROS 2</strong>.
+                </p>
+                <p><strong>Technologies :</strong> C++, Gazebo, ROS 2</p>
+                <a href="#">Lien vers Telekyb3 – migration en cours (Inria Rainbow)</a>
+            </div>
 
-    <div class="section" id="experience">
-        <h2>Expériences Professionnelles</h2>
-        <div class="card">
-            <h3>Stagiaire Développeuse Web Java/Angular - Capgemini</h3>
-            <p><em>2025 - Présent</em></p>
-            <p>Participation au développement d'applications web en utilisant Java pour le backend et Angular pour
-                le frontend. Collaboration avec une équipe agile pour livrer des fonctionnalités robustes et
-                optimisées. Contribution à la rédaction de tests unitaires et à l'amélioration des performances des
-                applications.</p>
-        </div>
-        <div class="card">
-            <h3>Stagiaire Développeuse Web PHP/Symfony - Association Guinéenne d'Ille-et-Vilaine (AG35)</h3>
-            <p><em>Avril - Juin 2024</em></p>
-            <p>Participation au développement du site web de l'association en utilisant PHP et Symfony pour le
-                backend, avec HTML/CSS pour le frontend. Collaboration avec une équipe agile pour livrer des
-                fonctionnalités robustes et optimisées.</p>
-        </div>
-        <div class="experience-entry">
-        <h3>Orange Finances Mobiles Guinée - Stagiaire Data Analyst</h3>
-        <p>2023 (6 mois)</p>
-        <p>Traitement des données SQL, création de rapports de performance et analyse des indicateurs.</p>
-      </div>
-    </div>
-    <div class="section" id="projects">
-        <h2>Projets</h2>
-        <div class="card">
-            <h3>🛰️ Migration de plugins pour Telekyb3 – Simulation robotique avec Gazebo</h3>
-            <p>Dans le cadre d’un projet universitaire, mon équipe a collaboré avec l’équipe Rainbow d’Inria pour
-                contribuer à la migration de plugins de <strong>Gazebo Classic</strong> (v9/v11) vers <strong>Gazebo
-                    Harmonic</strong> pour leur simulateur robotique open source <strong>Telekyb3</strong>.</p>
-            <p>J’ai analysé les différences entre les architectures des deux versions, mis à jour les interfaces avec
-                <strong>gz-sim</strong> et adapté les modèles <strong>SDF</strong> pour garantir leur compatibilité avec
-                <strong>ROS 2</strong>.
-            </p>
-            <p>Ce projet m’a permis de découvrir un nouvel environnement de simulation et d'acquérir des compétences
-                en robotique et migration logicielle.</p>
-            <a href="#">Lien vers Telekyb3 – migration en cours (Inria Rainbow)</a>
+            <div class="card">
+                <h3>🎟️ Application web – Vente de tickets de concert</h3>
+                <p>Développement d’une application web permettant aux utilisateurs d’acheter des tickets de concert et
+                    aux organisateurs de gérer leurs événements.</p>
+                <p>Projet fullstack avec une interface fluide et responsive, intégrant la gestion des stocks de places,
+                    une logique de réservation, et des profils utilisateur.</p>
+                <p><strong>Technologies :</strong> HTML, CSS, JavaScript, PHP/Laravel, MySQL</p>
+                <a href="https://github.com/Thioro836/-Application-de-Vente-de-Tickets-de-Concert-en-Ligne.git">Lien
+                    vers le projet</a>
+            </div>
+            <div class="card">
+                <h3>📝 Mini-éditeur de texte – Java</h3>
+                <p>Ce projet en Java consistait à implémenter un éditeur de texte avec gestion de buffer et commandes
+                    utilisateur.</p>
+                <p>Fonctionnalités par version :
+                <ul>
+                    <li><strong>V1</strong> : insertion, sélection, couper/copier/coller</li>
+                    <li><strong>V2</strong> : enregistrement et relecture des commandes</li>
+                    <li><strong>V3</strong> : annulation/rétablissement illimités via Memento Pattern</li>
+                </ul>
+                </p>
+                <a href="https://github.com/Thioro836/Mini-editor.git">Lien vers le projet</a>
+            </div>
+            <div class="card">
+                <h3>🍽️ Simulation multithreadée d’un restaurant</h3>
+                <p>Ce projet simule le fonctionnement d’un restaurant à l’aide de la <strong>programmation
+                        concurrente</strong>. Chaque acteur (clients, cuisiniers, serveurs) est modélisé sous forme de
+                    threads, interagissant avec des ressources partagées comme le buffet ou le stand de cuisson.</p>
+                <p>Objectifs : comprendre les problèmes de <strong>synchronisation</strong>, de <strong>gestion d’accès
+                        critique</strong> et de <strong>deadlock</strong>.</p>
+                <p><strong>Technologies :</strong> Java (multithreading, synchronisation), patrons de conception.</p>
+                <a href="https://github.com/Thioro836/Simulation_restaurant.git">Lien vers le projet</a>
+            </div>
 
-
+            <div class="card">
+                <h3>🚗 Optimisation de parking – Projet algorithmique</h3>
+                <p>Ce projet a pour objectif d’<strong>optimiser l’allocation de voitures</strong> sur les deux côtés
+                    d’une rue en minimisant la <strong>longueur totale occupée</strong>.</p>
+                <p>J’ai modélisé le problème comme un programme linéaire et utilisé la bibliothèque <strong>PuLP
+                        (Python)</strong> pour le résoudre.</p>
+                <p><strong>Compétences développées :</strong> modélisation mathématique, optimisation, résolution de
+                    contraintes.</p>
+                <a href="https://github.com/Thioro836/Parking.git">Lien vers le projet</a>
+            </div>
+            <div class="card">
+                <h3>🩺 Application web – Suivi des consultations prénatales</h3>
+                <p>Développement d’une application pour la <strong>dématérialisation des dossiers médicaux</strong> dans
+                    un centre de santé. Elle permet de suivre l’historique des <strong>consultations prénatales</strong>
+                    des patientes de manière numérique.</p>
+                <p>J’ai conçu une interface intuitive et développé un backend robuste avec une <strong>gestion sécurisée
+                        des données médicales</strong>.</p>
+                <p><strong>Technologies :</strong> HTML, CSS, JavaScript, PHP/Laravel, MySQL.</p>
+                <a href="https://github.com/Thioro836/cpn.git">Lien vers le projet</a>
+            </div>
+            <div class="card">
+                <h3>🌐 Projet Personnel - Portfolio Web</h3>
+                <p>Création de ce portfolio en HTML, CSS, et JavaScript. Design responsive et moderne, optimisé pour une
+                    navigation fluide.</p>
+                <p><strong>Technologies :</strong> HTML, CSS, JavaScript</p>
+                <a href="https://github.com/Thioro836/Portfolio">Lien vers le code source</a>
+            </div>
         </div>
-        <div class="card">
-            <h3>Application web – Vente de tickets de concert</h3>
-            <p>Développement d’une application web permettant aux utilisateurs d’acheter des tickets de concert et aux
-                organisateurs de gérer leurs événements.</p>
-            <p>Projet fullstack avec une interface fluide et responsive, intégrant la gestion des stocks de places, une
-                logique de réservation, et des profils utilisateur.</p>
-            <p><strong>Technologies :</strong> Java, Angular, MySQL</p>
-            <a href="https://github.com/Thioro836/-Application-de-Vente-de-Tickets-de-Concert-en-Ligne.git">Lien
-                vers le projet</a>
+        <div class="section" id="contact">
+            <h2>Contact</h2>
+            <div class="card">
+                <p>Pour toute question ou opportunité de collaboration, n’hésitez pas à me contacter :</p>
+                <p><i class="fab fa-linkedin"></i> LinkedIn : <a
+                        href="https://www.linkedin.com/in/fatoumata-thioro-bah-a3640a215/">Fatoumata Thioro BAH</a></p>
+                <p><i class="fab fa-github"></i> GitHub : <a href="https://github.com/Thioro836">Thioro836</a></p>
+                <p><i class="fas fa-envelope"></i> Email : <a
+                        href="mailto:fatouthioro24@gmail.com">fatouthioro24@gmail.com</a></p>
+            </div>
         </div>
-        <div class="card">
-            <h3> 📝 Mini-éditeur de texte – Java</h3>
-            <p>Ce projet en Java consistait à implémenter un éditeur de texte avec gestion de buffer et commandes
-                utilisateur.</p>
-            <p>Fonctionnalités par version :
-            <ul>
-                <li><strong>V1</strong> : insertion, sélection, couper/copier/coller</li>
-                <li><strong>V2</strong> : enregistrement et relecture des commandes</li>
-                <li><strong>V3</strong> : annulation/rétablissement illimités via Memento Pattern</li>
-            </ul>
-            </p>
-            <a href="https://github.com/Thioro836/Mini-editor.git">Lien vers le projet</a>
-        </div>
-        <div class="card">
-            <p>Ce projet simule le fonctionnement d’un restaurant à l’aide de la <strong>programmation
-                    concurrente</strong>. Chaque acteur (clients, cuisiniers, serveurs) est modélisé sous forme de
-                threads, interagissant avec des ressources partagées comme le buffet ou le stand de cuisson.</p>
-            <p>Objectifs : comprendre les problèmes de <strong>synchronisation</strong>, de <strong>gestion d’accès
-                    critique</strong> et de <strong>deadlock</strong>.</p>
-            <p><strong>Technologies :</strong> Java (multithreading, synchronisation).</p>
-            <a href="https://github.com/Thioro836/Simulation_restaurant.git">Lien vers le projet</a>
-        </div>
-        <div class="card">
-            <h3>🚗 Optimisation de parking – Projet algorithmique</h3>
-            <p>Ce projet a pour objectif d’<strong>optimiser l’allocation de voitures</strong> sur les deux côtés d’une
-                rue en minimisant la <strong>longueur totale occupée</strong>.</p>
-            <p>J’ai modélisé le problème comme un programme linéaire et utilisé la bibliothèque <strong>PuLP
-                    (Python)</strong> pour le résoudre.</p>
-            <p><strong>Compétences développées :</strong> modélisation mathématique, optimisation, résolution de
-                contraintes.</p>
-            <a href="https://github.com/Thioro836/Parking.git">Lien vers le projet</a>
-        </div>
-        <div class="card">
-            <h3>🩺 Application web – Suivi des consultations prénatales</h3>
-
-            <p>Développement d’une application pour la <strong>dématérialisation des dossiers médicaux</strong> dans un
-                centre de santé. Elle permet de suivre l’historique des <strong>consultations prénatales</strong> des
-                patientes de manière numérique.</p>
-            <p>J’ai conçu une interface intuitive et développé un backend robuste avec une <strong>gestion sécurisée des
-                    données médicales</strong>.</p>
-            <p><strong>Technologies :</strong> HTML, CSS, JavaScript, PHP/Laravel, MySQL.</p>
-            <a href="https://github.com/Thioro836/cpn.git">Lien vers le projet</a>
-        </div>
-        <div class="card">
-            <h3>Projet Personnel - Portfolio Web</h3>
-            <p>Création de ce portfolio en HTML, CSS et JavaScript pour présenter mes compétences et projets. Design
-                responsive et moderne, optimisé pour une navigation fluide.</p>
-            <a href="https://github.com/Thioro836/Portfolio">Lien vers le code source</a>
-        </div>
-    </div>
-    <div class="section" id="contact">
-        <h2>Contact</h2>
-        <div class="card">
-            <p>Pour toute question ou opportunité de collaboration, n'hésitez pas à me contacter :</p>
-            <p>LinkedIn : <a href="https://www.linkedin.com/in/fatoumata-thioro-bah-a3640a215/">Fatoumata Thioro
-                    BAH</a></p>
-            <p>GitHub : <a href="https://github.com/Thioro836">Thioro836</a></p>
-            <p>Email : fatouthioro24@gmail.com</p>
-        </div>
-    </div>
     </div>
     <footer>
         <p>© 2025 Fatoumata Thioro BAH. Tous droits réservés.</p>
     </footer>
-</body>
-<script>
-    document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+            });
         });
-    });
-</script>
+    </script>
+</body>
 
 </html>
